@@ -1,0 +1,63 @@
+#Justin Park
+#3.20
+# stores names of the months
+month_lst = ["January", "February", "March"]
+
+# loops through month lst pulling index first three indexes.
+for i in month_lst:
+    print(i[:3])
+
+print()
+
+
+#3.25
+# takes user input
+names = eval(input("Enter a list: "))
+
+# takes user input to find whether it is in or not
+for i in names:
+    if i[0] in "ABCDEFGHIJKLM":
+        print(i)
+
+
+print()
+
+
+
+#3.41
+
+# to set a definition for first and lastname
+def lastF(first, last):
+    return last+" "+first[0]+"."
+
+print(lastF('Albert','Camus'))
+
+print()
+
+
+#3.44
+
+# to set a definition for distance
+def distance(seconds):
+    return(seconds * 340.29) / 1000
+
+print(distance(3))
+
+print()
+
+#Sample Output:
+
+import random
+
+# import random function and define funtion that names random_movies
+def random_movies(lst):
+    print()
+    num_movies = int(input("Please enter a number of movies you'd like to generate: "))
+    print()
+    print("Welcome to Randoplex! Curretnly playing movies are: ")
+    print()
+    for i in range(0, num_movies):
+        print(random.choice(lst)+" "+random.choice(lst)+" "+random.choice(lst))
+    
+#Main
+random_movies(eval(input("Please enter a list of words: ")))
