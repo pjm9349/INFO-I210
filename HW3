@@ -1,0 +1,63 @@
+#Justin Park
+#Info - I210
+#10/11/2016
+
+# 4.13 (Write your solutions as Boolean conditions - they should evaluate to True or False)
+
+s = 'abcdefghijklmnopqrstuvwxyz'
+
+# a)
+print(s[1:3] == 'bc')
+
+# b)
+print(s[:14] == 'abcdefghijklmn')
+
+# c)
+print(s[14:] == 'opqrstuvwxyz')
+
+# d)
+print(s[1:-1] == 'bcdefghijklmnopqrstuvwxy')
+
+# 4.16 (By dictionary order, they mean alphabetical order)
+def dictionaryOrder():
+    words = [
+        str(input("Enter first word: ")),
+        str(input("Enter second word: ")),
+        str(input("Enter third word: "))
+    ]
+    words_sorted = sorted(words)
+    print(words == words_sorted)
+
+dictionaryOrder()
+# to make sure each words are equal to words_sorted, I have to print it out with boolean function to know whether it is ture or false.
+
+# 4.20
+sender = "tim@abc.com"
+recipient = "tom@xzy.org"
+subject = "Hello!"
+print("From: "+sender+"\nTo: "+recipient+"\nSubject: "+subject)
+
+
+# 4.23
+def average():
+    sentence = input("Enter a sentence: ")
+    vocabs = sentence.split()
+    wordCount = len(vocabs)
+    average = sum(len(vocab) for vocab in vocabs)/len(vocabs)
+    print(average)
+
+average()
+#sum of length of each words are 15 and then divide it by length of vocabs, which is 3, are 5
+
+
+# 4.25
+# to count exact number of letters been used, I have to use Count function.
+def vowelCount(input):
+    print("a, e, i, o and u appear, respectively, "+
+          str(input.lower().count('a'))+", "+
+          str(input.lower().count('e'))+", "+
+          str(input.lower().count('i'))+", "+
+          str(input.lower().count('o'))+", "+
+          str(input.lower().count('u'))+" times.")
+
+vowelCount("Le tour de France")
