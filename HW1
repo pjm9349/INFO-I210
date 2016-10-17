@@ -1,0 +1,90 @@
+#Justin Park#
+#Chapter 2 Exercises#
+
+#2.14#
+
+s = 'goodbye'
+
+#a)
+print(s[0] == 'g')
+
+#b)
+print(s[6] == 'g')
+
+#c)
+print(s[0] and s[1] == 'g' and 'a')
+
+#d)
+print(s[5] == 'x')
+
+#e)
+print(s[3] == 'd')
+
+#f)
+print(s[0] == s[6])
+
+#g)
+print(s[3] + s[4] + s[5] + s[6] == 'tion')
+
+#2.16#
+
+#a)
+a = 6
+b = 7
+
+#b)
+c = (a+b)/2
+
+#c)
+inventory = ('paper', 'staples', 'pencils')
+
+#d)
+first = 'John'
+middle = 'Fitzgerald'
+last = 'Kennedy'
+
+#e)
+full = (first) + " " + (middle) + " " + (last)
+
+#2.18#
+
+#a)
+flowers = ['rose', 'bougainvillea', 'yucca', 'marigold', 'daylilly', 'lilly of the valley']
+
+#b)
+flowers.append('potato')
+print('potato' in flowers)
+
+#c)
+thorny = [flowers.pop(0), flowers.pop(0), flowers.pop(0)]
+print(thorny)
+
+#d)
+poisonous = [flowers.pop(-1)]
+print(poisonous)
+
+#e)
+dangerous = (thorny + poisonous)
+print(dangerous)
+
+#2.22#
+
+numbers_list = [3,7,-2,12]
+numbers_range = max(numbers_list) - min(numbers_list)
+print(numbers_range)
+
+#2.28#
+#a)
+lst = [1,3,5,7,9]
+print(int(len(lst)/2))
+
+#b)
+print(lst[int(len(lst)/2)])
+
+#c)
+descending = sorted(lst,reverse=True)
+print(descending)
+
+#d)
+lst.append(lst.pop(0))
+print(lst)
