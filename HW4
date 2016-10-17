@@ -1,0 +1,60 @@
+# Justin Park
+
+# Info - I210
+
+
+
+# 5.29
+
+#By using def fuction, I set new fuction to call lastfirst
+#store the first names and last names in two different variables
+#Using for fuction to loop name in string
+#As you can see through the name return name with reverse order by lastname, and then firstname
+def lastfirst(string):
+    firstname = []
+    lastname = []
+    
+    for name in string:
+        indx = int(name.index(','))
+        firstname.append(name[0:indx])
+        lastname.append(name[indx+2: ])
+    return lastname, firstname
+
+
+print(lastfirst(["Gerber, Len", "Fox, Kate", "Dunn, Bob"]))
+
+
+
+# 5.39
+
+# By using def fuction, I set new fuction to call the exclamation
+# 
+
+def exclamation(string):
+    return_str = ""
+    vowels = ["a", "e", "i", "o", "u"]
+    for letter in string:
+        if letter in vowels:
+            return_str += letter * 4
+        else:
+            return_str += letter
+    return_str += "!"
+    return return_str
+
+print(exclamation("argh"))
+print(exclamation("hello"))
+
+# 5.43
+
+def evenrow(two_dimensional_lst):
+    for row in two_dimensional_lst:
+        adderMagic = 0
+        for elem in row:
+            adderMagic += elem
+        if not adderMagic % 2 == 0:
+            return False
+    return True
+
+print(evenrow([[1,3],[2,4],[0,6]]))
+print(evenrow([[1,3,2],[3,4,7],[0,6,2]]))
+print(evenrow([[1,3,2],[3,4,7],[0,5,2]]))
