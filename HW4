@@ -2,14 +2,13 @@
 
 # Info - I210
 
-
-
 # 5.29
 
 #By using def fuction, I set new fuction to call lastfirst
 #store the first names and last names in two different variables
 #Using for fuction to loop name in string
 #As you can see through the name return name with reverse order by lastname, and then firstname
+
 def lastfirst(string):
     firstname = []
     lastname = []
@@ -28,7 +27,8 @@ print(lastfirst(["Gerber, Len", "Fox, Kate", "Dunn, Bob"]))
 # 5.39
 
 # By using def fuction, I set new fuction to call the exclamation
-# 
+# Using for fuction to loop letter in string
+# Using else/if function to set a conditions
 
 def exclamation(string):
     return_str = ""
@@ -46,12 +46,17 @@ print(exclamation("hello"))
 
 # 5.43
 
+# By using def fuction, I set new fuction to call the two_dimensional_lst
+# Using for fuction to loop row in two_dimensional_lst
+# set 0 for variable as starting counting
+# Using another for fuction to loop number in row
+
 def evenrow(two_dimensional_lst):
     for row in two_dimensional_lst:
-        adderMagic = 0
-        for elem in row:
-            adderMagic += elem
-        if not adderMagic % 2 == 0:
+        counting = 0
+        for number in row:
+            counting += number
+        if not counting % 2 == 0:
             return False
     return True
 
